@@ -1,4 +1,10 @@
 
+1.0.1 / 2019-03-19
+==================
+
+**fixes**
+  * [[`fff8113`](http://github.com/atian25/alfred-plugin-projj/commit/fff811361cad7ca1d3704f65d3634039bda0d210)] - fix: badge link (TZ <<atian25@qq.com>>)
+
 1.0.0 / 2019-03-19
 ==================
 
