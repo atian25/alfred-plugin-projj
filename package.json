@@ -1,6 +1,6 @@
 {
   "name": "alfred-plugin-projj",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "alfred plugin for https://github.com/popomore/projj",
   "dependencies": {
     "alfy": "^0.8.0",

@@ -1,4 +1,10 @@
 
+1.0.2 / 2019-03-19
+==================
+
+**fixes**
+  * [[`5fe6847`](http://github.com/atian25/alfred-plugin-projj/commit/5fe6847ba0094ad77c1e9cffc941d6f3593d30e5)] - fix: info.plist (TZ <<atian25@qq.com>>)
+
 1.0.1 / 2019-03-19
 ==================
 
