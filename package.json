@@ -42,6 +42,7 @@
   },
   "files": [
     "assets",
+    "info.plist",
     "icon.png",
     "index.js"
   ],
