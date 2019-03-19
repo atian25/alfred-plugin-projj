@@ -11,12 +11,12 @@ Alfred plugin for https://github.com/popomore/projj
 
 [npm-image]: https://img.shields.io/npm/v/alfred-plugin-projj.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/alfred-plugin-projj
-[travis-image]: https://img.shields.io/travis/{{org}}/alfred-plugin-projj.svg?style=flat-square
-[travis-url]: https://travis-ci.org/{{org}}/alfred-plugin-projj
-[codecov-image]: https://codecov.io/gh/{{org}}/alfred-plugin-projj/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/{{org}}/alfred-plugin-projj
-[david-image]: https://img.shields.io/david/{{org}}/alfred-plugin-projj.svg?style=flat-square
-[david-url]: https://david-dm.org/{{org}}/alfred-plugin-projj
+[travis-image]: https://img.shields.io/travis/atian25/alfred-plugin-projj.svg?style=flat-square
+[travis-url]: https://travis-ci.org/atian25/alfred-plugin-projj
+[codecov-image]: https://codecov.io/gh/atian25/alfred-plugin-projj/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/atian25/alfred-plugin-projj
+[david-image]: https://img.shields.io/david/atian25/alfred-plugin-projj.svg?style=flat-square
+[david-url]: https://david-dm.org/atian25/alfred-plugin-projj
 [snyk-image]: https://snyk.io/test/npm/alfred-plugin-projj/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/alfred-plugin-projj
 [download-image]: https://img.shields.io/npm/dm/alfred-plugin-projj.svg?style=flat-square
