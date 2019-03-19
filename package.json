@@ -1,0 +1,50 @@
+{
+  "name": "alfred-plugin-projj",
+  "version": "1.0.0",
+  "description": "alfred plugin for https://github.com/popomore/projj",
+  "dependencies": {
+    "alfy": "^0.8.0",
+    "mz": "^2.7.0",
+    "node-homedir": "^1.1.1"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "autod": "^3.0.1",
+    "egg-bin": "^4.11.1",
+    "egg-ci": "^1.11.0",
+    "eslint": "^5.15.3",
+    "eslint-config-egg": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup",
+    "autod": "autod",
+    "lint": "eslint .",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "eslintIgnore": [
+    "coverage",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:atian25/alfred-plugin-projj.git"
+  },
+  "files": [
+    "assets",
+    "icon.png",
+    "index.js"
+  ],
+  "author": "TZ",
+  "license": "MIT"
+}

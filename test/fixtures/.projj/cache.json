@@ -1,0 +1,17 @@
+{
+  "github.com/eggjs/egg": {
+    "repo": "git@github.com:eggjs/egg.git"
+  },
+  "github.com/popomore/projj": {
+    "repo": "git@github.com:popomore/projj.git"
+  },
+  "github.com/atian25/alfred-plugin-projj": {
+    "repo": "git@github.com:atian25/alfred-plugin-projj.git"
+  },
+  "gitlab.anywhere.com/admin/test": {
+    "repo": "git@gitlab.anywhere.com:admin/test.git"
+  },
+  "gitlab.anywhere.com/admin/dashboard": {
+    "repo": "git@gitlab.anywhere.com:admin/dashboard.git"
+  }
+}
