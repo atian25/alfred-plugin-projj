@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "alfred plugin for https://github.com/popomore/projj",
   "dependencies": {
-    "alfy": "^0.8.0",
+    "alfy": "^0.9.0",
     "mz": "^2.7.0",
     "node-homedir": "^1.1.1"
   },
