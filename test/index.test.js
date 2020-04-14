@@ -7,7 +7,7 @@ const alfyTest = require('alfy-test');
 describe('test/index.test.js', () => {
   it('should work', async () => {
     const alfy = alfyTest();
-    alfy.config.set('HOME', path.join(__dirname, 'fixtures'));
+    alfy.config.set('HOME', path.join(__dirname, 'fixtures/projj'));
 
     let result;
 
@@ -25,6 +25,28 @@ describe('test/index.test.js', () => {
 
     result = await alfy('gitlab test');
     assert(result.length === 1);
-     assert(result[0].icon.path === path.join(__dirname, '../assets/gitlab.png'));
+    assert(result[0].icon.path === path.join(__dirname, '../assets/gitlab.png'));
+  });
+
+  it('should work for projj_v2', async () => {
+    const alfy = alfyTest();
+    alfy.config.set('HOME', path.join(__dirname, 'fixtures/projj_v2'));
+
+    const result = await alfy('egg');
+    assert(result.length === 1);
+    assert(result[0].title === 'eggjs/egg');
+    assert(result[0].arg === '/tmp/test/github.com/eggjs/egg');
+    assert(result[0].icon.path === path.join(__dirname, '../assets/github.png'));
+  });
+
+  it('should work for projj_v2_multiply', async () => {
+    const alfy = alfyTest();
+    alfy.config.set('HOME', path.join(__dirname, 'fixtures/projj_v2_multiply'));
+
+    const result = await alfy('egg');
+    assert(result.length === 1);
+    assert(result[0].title === 'eggjs/egg');
+    assert(result[0].arg === '/tmp/test/github.com/eggjs/egg');
+    assert(result[0].icon.path === path.join(__dirname, '../assets/github.png'));
   });
 });
