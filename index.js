@@ -56,7 +56,7 @@ async function run() {
       // quicklookurl: path.join(filePath, 'README.md'),
       mods: {
         alt: {
-          arg: `https://${key}`,
+          arg: `https://${origin}/${title}`,
           subtitle: 'open in browser',
         },
         cmd: {

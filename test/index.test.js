@@ -18,6 +18,7 @@ describe('test/index.test.js', () => {
     assert(result.length === 1);
     assert(result[0].title === 'eggjs/egg');
     assert(result[0].arg === '/tmp/github.com/eggjs/egg');
+    assert(result[0].mods.alt.arg === 'https://github.com/eggjs/egg');
     assert(result[0].icon.path === path.join(__dirname, '../assets/github.png'));
 
     result = await alfy('github projj');
@@ -45,6 +46,7 @@ describe('test/index.test.js', () => {
 
     const result = await alfy('egg');
     assert(result.length === 1);
+    assert(result[0].mods.alt.arg === 'https://github.com/eggjs/egg');
     assert(result[0].title === 'eggjs/egg');
     assert(result[0].arg === '/tmp/test/github.com/eggjs/egg');
     assert(result[0].icon.path === path.join(__dirname, '../assets/github.png'));
