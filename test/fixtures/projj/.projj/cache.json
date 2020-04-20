@@ -13,5 +13,8 @@
   },
   "gitlab.anywhere.com/admin/dashboard": {
     "repo": "git@gitlab.anywhere.com:admin/dashboard.git"
+  },
+  "other.com/test/hello": {
+    "repo": "git@other.com:test/hello.git"
   }
 }
