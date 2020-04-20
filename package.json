@@ -3,17 +3,16 @@
   "version": "1.0.2",
   "description": "alfred plugin for https://github.com/popomore/projj",
   "dependencies": {
-    "alfy": "^0.8.0",
+    "alfy": "^0.9.1",
     "mz": "^2.7.0",
     "node-homedir": "^1.1.1"
   },
   "devDependencies": {
-    "alfy-test": "^0.3.0",
-    "autod": "^3.0.1",
-    "egg-bin": "^4.11.1",
-    "egg-ci": "^1.11.0",
-    "eslint": "^5.15.3",
-    "eslint-config-egg": "^7.2.0"
+    "alfy-test": "^0.4.0",
+    "autod": "^3.1.0",
+    "egg-bin": "^4.14.1",
+    "eslint": "^6.8.0",
+    "eslint-config-egg": "^8.0.1"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -28,9 +27,6 @@
     "cov": "egg-bin cov",
     "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
     "pkgfiles": "egg-bin pkgfiles"
-  },
-  "ci": {
-    "version": "10"
   },
   "eslintIgnore": [
     "coverage",

@@ -27,6 +27,10 @@ describe('test/index.test.js', () => {
     result = await alfy('gitlab test');
     assert(result.length === 1);
     assert(result[0].icon.path === path.join(__dirname, '../assets/gitlab.png'));
+
+    result = await alfy('hello');
+    assert(result.length === 1);
+    assert(result[0].icon.path === path.join(__dirname, '../assets/git.png'));
   });
 
   it('should work for projj_v2', async () => {
