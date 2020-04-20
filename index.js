@@ -29,15 +29,23 @@ async function run() {
   for (const key of Object.keys(cache)) {
     // filter
     if (keyword.some(str => !key.includes(str))) continue;
-
-    const title = key.substring(key.indexOf('/') + 1);
-    const filePath = path.join(cfg.base, key);
-
+    const title = key.split('/').splice(-2).join('/');
+    const origin = key.split('/').splice(-3)[0];
+    let filePath;
+    if (Array.isArray(cfg.base)) {
+      filePath = key;
+    } else {
+      if (!key.startsWith(cfg.base)) {
+        filePath = path.join(cfg.base, key);
+      } else {
+        filePath = key;
+      }
+    }
     // icon
     let type;
-    if (key.startsWith('github.com')) {
+    if (origin.startsWith('github.com')) {
       type = 'github';
-    } else if (key.startsWith('gitlab')) {
+    } else if (origin.startsWith('gitlab')) {
       type = 'gitlab';
     }
 
@@ -48,12 +56,12 @@ async function run() {
       // quicklookurl: path.join(filePath, 'README.md'),
       mods: {
         alt: {
-          arg: `https://${key}`,
-          subtitle: `open in browser`,
+          arg: `https://${origin}/${title}`,
+          subtitle: 'open in browser',
         },
         cmd: {
           arg: filePath,
-          subtitle: `open in iTerm`,
+          subtitle: 'open in iTerm',
         },
       },
       icon: {
@@ -66,7 +74,7 @@ async function run() {
   if (result.length) {
     alfy.output(result);
   } else {
-    alfy.output([ { title: `not match git project \`${alfy.input}\`` }]);
+    alfy.output([{ title: `not match git project \`${alfy.input}\`` }]);
   }
 }
 
