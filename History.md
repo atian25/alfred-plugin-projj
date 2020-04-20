@@ -1,4 +1,14 @@
 
+1.1.0 / 2020-04-20
+==================
+
+**fixes**
+  * [[`8872980`](http://github.com/atian25/alfred-plugin-projj/commit/8872980d5f23729401ba197574c3b5fcce3759a6)] - fix: support projj 2.0 (#3) (DiamondYuan <<541832074@qq.com>>)
+
+**others**
+  * [[`65f7416`](http://github.com/atian25/alfred-plugin-projj/commit/65f741610992c09955189503109b6299376976ac)] - refactor: splice (#4) (TZ | 天猪 <<atian25@qq.com>>)
+  * [[`72c5c46`](http://github.com/atian25/alfred-plugin-projj/commit/72c5c46896ddfebfb0b26c17b3b850a3a8e6e9b0)] - chore: github actions (TZ | 天猪 <<atian25@qq.com>>)
+
 1.0.2 / 2019-03-19
 ==================
 
